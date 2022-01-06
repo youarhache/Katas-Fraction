@@ -27,3 +27,14 @@ def test_when_adding_2_fifths_and_1_fifth_then_return_3_fifths():
     assert isinstance(result, Fraction)
     assert result.numerator == 3
     assert result.denominator == 5
+
+
+def test_when_adding_2_7ths_and_3_7th_then_return_5_7ths():
+    two_sevenths = Fraction(2, 7)
+    three_sevenths = Fraction(3, 7)
+
+    result = add_fractions(two_sevenths, three_sevenths)
+
+    assert isinstance(result, Fraction)
+    assert result.numerator == 5
+    assert result.denominator == 7

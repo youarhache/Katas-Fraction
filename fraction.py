@@ -8,4 +8,5 @@ class Fraction:
 
 
 def add_fractions(frac1: Fraction, frac2: Fraction) -> Fraction:
-    return Fraction(3, 5)
+    return Fraction(frac1.numerator + frac2.numerator,
+                    frac1.denominator)
