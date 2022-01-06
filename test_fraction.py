@@ -49,3 +49,14 @@ def test_when_adding_1_half_and_1_third_then_return_5_6ths():
     assert isinstance(result, Fraction)
     assert result.numerator == 5
     assert result.denominator == 6
+
+
+def test_when_adding_7_8ths_and_1_half_then_11_8ths():
+    frac1 = Fraction(7, 8)
+    frac2 = Fraction(1, 2)
+
+    result = add_fractions(frac1, frac2)
+
+    assert isinstance(result, Fraction)
+    assert result.numerator == 11
+    assert result.denominator == 8
