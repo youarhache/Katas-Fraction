@@ -3,4 +3,5 @@ class Fraction:
     denominator: int
 
     def __init__(self, numerator, denominator) -> None:
-        pass
+        self.numerator = numerator
+        self.denominator = denominator
